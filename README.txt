@@ -1,1 +1,1 @@
-Prototyping the employee database for intranet. 
+Employee database and company portal. (Social and Wiki)
