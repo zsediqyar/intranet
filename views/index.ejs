@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+<!-- Calendar Script -->
+<%
+  var d = new Date();
+  var day = d.getDate();
+  var month = d.getMonth()+1;
+  var year = d.getFullYear();
+
+%>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-9" style="border: 1px solid gray;">
+      <!-- Blog posts and content should go here-->
+      <h2>Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="col-sm-3" style="border: 1px solid gray;">
+      <!-- Side panel for static content-->
+      <div class="side-panel">
+        <h2>Calendar</h2>
+          <p>
+              <span><%= day %></span> <br>
+              <span><%= month %></span>
+              <span><%= year %></span>
+          </p>
+      </div>
+      <div class="side-panel">
+        <h2>Birthdays Today</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% include ./partials/footer %>
