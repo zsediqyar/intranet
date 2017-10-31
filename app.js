@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Database connection in localDB
-mongoose.connect("mongodb://localhost/intranet_db");
+// mongoose.connect("mongodb://localhost/intranet_db");
 
 //index route
 app.get("/", function(req, res){
@@ -40,7 +40,14 @@ app.get("/offices", function(req, res){
 
 
 
-//PORT configuration
-app.listen(5000, () => {
-	console.log('App started on port 5000');
+//PORT configuration Local Machine
+// app.listen(5000, () => {
+// 	console.log('App started on port 5000');
+// });
+
+//PORT configuration c9
+
+
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("server started!");
 });
