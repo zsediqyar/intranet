@@ -1,5 +1,53 @@
 <% include ./partials/header %>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Update Profile</h4>
+                <form method="POST" action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="first_name" placeholder="First Name"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="last_name" placeholder="Last Name"></input>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="photo">Select a profile picture</label><br>
+                        <input type="file" class="form-control-form" name="photo" id="photo" placeholder="Image"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="position" placeholder="Position"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="phone_num" placeholder="Phone Number (Private)"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="phone_ext" placeholder="Office Phone Extension"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="desk_num" placeholder="Desk Number"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" name="date_joined" placeholder="Date Joined"></input>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" name="hobby" placeholder="Hobbies"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" name="skills" placeholder="Know hows"></textarea>
+                    </div>
+                </form>
+                <a href="#" class="btn btn-primary">Submit</a>
+              </div>
+            </di>
+        </div>
+    </div>
+</div>
+
+
 
 <% include ./partials/footer %>

@@ -37,7 +37,10 @@ app.get("/offices", function(req, res){
 			});
 
 
-
+//user profile page
+app.get("/user", function(req, res){
+	res.render("profile");	
+});
 
 
 //PORT configuration Local Machine
