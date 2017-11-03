@@ -1,0 +1,35 @@
+.side-panel {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 1rem;;
+}
+
+#offices td a {
+padding: 0 0.6rem 0 0;
+text-decoration: none;
+color: rgb(101, 101, 106);
+
+}
+
+#offices td {
+  color: black;
+}
+
+#offices td :hover{
+  color: rgb(98, 167, 68);
+  text-shadow: 1px 1px 1px rgba(098, 167, 68, 0.1);
+  font-weight: 600;
+}
+
+table.sub{
+  margin-top: 2rem;
+}
+
+#offices td:nth-child(3){
+  padding-left: 2rem;
+}
+
+#offices th{
+  padding-top: 1rem;
+}
