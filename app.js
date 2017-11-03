@@ -32,8 +32,8 @@ app.get("/offices", function(req, res){
 });
 
 			//sf page
-			app.get("/sf", function(req, res){
-					res.render("sf");
+			app.get("/ny", function(req, res){
+					res.render("ny");
 			});
 
 
