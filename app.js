@@ -32,7 +32,7 @@ app.get("/offices", function(req, res){
 });
 
 			//sf page
-			app.get("/ny", function(req, res){
+			app.get("/offices/ny", function(req, res){
 					res.render("ny");
 			});
 
